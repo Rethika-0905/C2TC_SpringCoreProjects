@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="yakesh" class="DependencyInjection.Student">
+	 <property name="sid" value="101"/>
+	 <property name="sname" value="Yakesh"/>
+	 <property name="city" value="Chennai"/>
+</bean>
+
+<bean id="arun" class="DependencyInjection.Student">
+	 <property name="sid" value="102"/>
+	 <property name="sname" value="Arun"/>
+	 <property name="city" value="Pune"/>
+</bean>
+
+<bean id="john" class="DependencyInjection.Student1">
+	 <constructor-arg name="sid" value="103"/>
+	 <constructor-arg name="sname" value="John"/>
+	 <constructor-arg name="city" value="France"/>
+</bean>
+
+<bean id="devi" class="DependencyInjection.Student1">
+	 <constructor-arg name="sid" value="104"/>
+	 <constructor-arg name="sname" value="Devi"/>
+</bean>
+
+
+
+
+</beans>
